@@ -24,6 +24,13 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M8</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
@@ -37,6 +44,11 @@
                     <target>1.8</target>
                 </configuration>
                 <!-- something should be here-->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M8</version>
             </plugin>
         </plugins>
     </build>
