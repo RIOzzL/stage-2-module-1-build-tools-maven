@@ -5,7 +5,7 @@ public class StringUtils {
         if (str == null) {
             return false;
         } else {
-            return str.matches("[0-9]+");
+            return str.matches("\\d+(\\.\\d+)?");
         }
     }
 }
