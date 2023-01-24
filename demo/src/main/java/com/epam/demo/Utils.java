@@ -1,8 +1,5 @@
 package com.epam.demo;
 
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class Utils {
@@ -16,7 +13,7 @@ public class Utils {
     }
 
     public static boolean isPositiveNumber(String str) {
-        if (str == null) {
+        if (str == null || str.startsWith("0")) {
             return false;
         } else {
             return str.matches("\\d+(\\.\\d+)?");
